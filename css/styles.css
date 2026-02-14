@@ -165,11 +165,15 @@ p:last-child { margin-bottom: 0; }
 
 .nav-logo {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo img {
-  height: 124px;
-  width: auto;
+  height: 120px !important;
+  width: auto !important;
+  max-width: none !important;
+  display: block;
 }
 
 .nav-links {
@@ -332,16 +336,8 @@ p:last-child { margin-bottom: 0; }
 /* === PAGE HEADER === */
 .page-header {
   background: linear-gradient(135deg, #1a2b4a 0%, #1a5fa8 100%);
-  padding: 3rem 0 3rem;
+  padding: 3.5rem 0 3rem;
   text-align: center;
-}
-
-.page-header-logo {
-  display: block;
-  height: 140px;
-  width: auto;
-  margin: 0 auto 1.5rem;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
 }
 
 .page-header h1 {
@@ -359,10 +355,10 @@ p:last-child { margin-bottom: 0; }
 /* === HERO LOGO === */
 .hero-logo {
   display: block;
-  height: 180px;
+  height: 160px;
   width: auto;
-  margin: 0 auto 2rem;
-  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.4));
+  margin: 0 auto 1.75rem;
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
 }
 
 /* === HOME — HERO === */
