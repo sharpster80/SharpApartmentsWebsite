@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sharp Apartments | Waynesboro, PA</title>
+  <meta name="description" content="Contact Sharp Apartments about renting a unit, selling your property, or any other question. We respond promptly and are happy to schedule a showing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="Sharp Apartments Home">
+        <img src="images/web/logo/logo.png" alt="Sharp Apartments">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Our Properties</a></li>
+        <li><a href="sell-your-property.html">Sell Your Property</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Our Properties</a>
+      <a href="sell-your-property.html">Sell Your Property</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-offset">
+    <div class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Whether you're interested in renting a unit or want to discuss selling your property, we'd love to hear from you.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and we'll get back to you as soon as possible — typically within 24 hours.</p>
+
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID after signing up at formspree.io -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name <span style="color:#c0392b;">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span style="color:#c0392b;">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(717) 555-0100" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="subject">I'm contacting about <span style="color:#c0392b;">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="Renting a Unit">Renting a Unit</option>
+                <option value="Selling a Property">Selling a Property</option>
+                <option value="General Question">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span style="color:#c0392b;">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+            <!-- Honeypot anti-spam field -->
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+            <div id="formSuccess" class="form-success">
+              <i class="fa-solid fa-circle-check" style="margin-right:0.5rem;"></i>
+              Thanks for reaching out! We'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="contact-details">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="detail-text">
+              <strong>Email</strong>
+              <a href="mailto:contact@sharp-apartments.com">contact@sharp-apartments.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="detail-text">
+              <strong>Property Address</strong>
+              <span>125 West Second Street<br>Waynesboro, PA 17268</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="detail-icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="detail-text">
+              <strong>Facebook</strong>
+              <a href="https://www.facebook.com/profile.php?id=61587066134883" target="_blank" rel="noopener">Sharp Apartments on Facebook</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="detail-text">
+              <strong>Response Time</strong>
+              <span>We typically respond within 24 hours.</span>
+            </div>
+          </div>
+
+          <!-- Google Map embed -->
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.9!2d-77.5792!3d39.7551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c5a5a5a5a5a5%3A0x0!2s125+W+2nd+St%2C+Waynesboro%2C+PA+17268!5e0!3m2!1sen!2sus!4v1000000000000"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map to 125 West Second Street, Waynesboro PA">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-logo">
+          <img src="images/web/logo/logo.png" alt="Sharp Apartments">
+          <p>Locally owned rental housing in downtown Waynesboro, PA. Quality units, responsive management, fair prices.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61587066134883" target="_blank" rel="noopener" aria-label="Sharp Apartments on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Our Properties</a></li>
+            <li><a href="sell-your-property.html">Sell Your Property</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>125 West Second Street<br>Waynesboro, PA 17268</p>
+          <p><a href="mailto:contact@sharp-apartments.com">contact@sharp-apartments.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sharp Apartments. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
