@@ -157,7 +157,7 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 120px;
+  height: 140px;
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -168,7 +168,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav-logo img {
-  height: 108px;
+  height: 124px;
   width: auto;
 }
 
@@ -250,7 +250,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .page-offset {
-  padding-top: 120px;
+  padding-top: 140px;
 }
 
 /* === FOOTER === */
@@ -332,8 +332,16 @@ p:last-child { margin-bottom: 0; }
 /* === PAGE HEADER === */
 .page-header {
   background: linear-gradient(135deg, #1a2b4a 0%, #1a5fa8 100%);
-  padding: 3.5rem 0 3rem;
+  padding: 3rem 0 3rem;
   text-align: center;
+}
+
+.page-header-logo {
+  display: block;
+  height: 140px;
+  width: auto;
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
 }
 
 .page-header h1 {
@@ -346,6 +354,15 @@ p:last-child { margin-bottom: 0; }
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* === HERO LOGO === */
+.hero-logo {
+  display: block;
+  height: 180px;
+  width: auto;
+  margin: 0 auto 2rem;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.4));
 }
 
 /* === HOME — HERO === */
