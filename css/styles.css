@@ -382,35 +382,6 @@ p:last-child { margin-bottom: 0; }
   margin: 0;
 }
 
-/* === HERO LOGO CIRCLE === */
-.hero-logo-circle {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.75rem;
-  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
-}
-
-.hero-logo-circle img {
-  width: 126px;
-  height: 126px;
-  object-fit: contain;
-}
-
-/* === HERO LOGO === */
-.hero-logo {
-  display: block;
-  height: 160px;
-  width: auto;
-  margin: 0 auto 1.75rem;
-  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
-}
 
 /* === HOME — HERO === */
 .hero {
