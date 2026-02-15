@@ -1288,12 +1288,30 @@ p:last-child { margin-bottom: 0; }
     height: 86px;
   }
 
-  .nav-links {
+  .nav-inner {
+    height: 72px;
+  }
+
+  .nav-logo {
+    padding: 0 1rem;
+    min-width: unset;
+  }
+
+  .nav-logo img {
+    height: 56px !important;
+  }
+
+  .page-offset {
+    padding-top: 72px;
+  }
+
+  .nav-links-wrap {
     display: none;
   }
 
   .nav-toggle {
     display: flex;
+    margin-right: 1rem;
   }
 
   .section-pad {
